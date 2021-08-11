@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    position: relative;
+    background-color: silver;
+    width: 100vw;
+    height: 100vh;
+}
+
+.boxInfo {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    min-width: 460px;
+    width: 30%;
+    background: white;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+
+input[id="collapseBoxInfo"]:checked ~ .boxInfo {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
+    display: flex ;
+}
+
+@media screen and (max-width : 700px) {
+    .boxInfo {
+        top: 230px;
+        min-width: unset;
+        width: 100%;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+    }
+
+    input[id="collapseBoxInfo"]:checked ~ .boxInfo {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+
+    input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
+        display: none ;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .boxInfo {
+        top: 53.3vw;
+    }
+}
+
+.boxInfo .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.at-center {
+    align-items: center
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.d-grid {
+    display: grid;
+    width: 100%;
+}
+
+.grid-col-2 {
+    grid-template-columns: auto auto;
+}
+
+.grid-col-3 {
+    grid-template-columns: auto auto auto;
+}
+
+.grid-gap-col-10 {
+    grid-column-gap: 10px;
+}
+
+.grid-gap-col-8 {
+    grid-column-gap: 8px;
+}
+
+.grid-gap-col-4 {
+    grid-column-gap: 4px;
+}
+
+.grid-gap-row-8 {
+    grid-row-gap: 8px;
+}
+
+.grid-gap-row-4 {
+    grid-row-gap: 4px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.line-bottom-gray {
+    border-bottom: 1px solid #EDF0F7;
+}
+
+.text-md {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text-title {
+    font-size:16px;
+    line-height: 24px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.text-secondary {
+    color: #0F182E;
+}
+
+/* ==============
+CSS COMPONENT
+============== */
+
+/* BUTTON OUTLINE PRIMARY */
+.btn__outline_primary {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:40px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -ms-border-radius:40px;
+    -o-border-radius:40px;
+    border: 1px solid #EDF0F7;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.btn__outline_primary .icon{
+    width: 14.5px;
+    height: 14.5px;
+    margin-right:8px 
+}
+
+.btn__outline_primary .name {
+    color : #0089EF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* END ====  BUTTON OUTLINE PRIMARY */
+
+/* BUTTON OUTLINE SECONDARY */
+.btn__outline_secondary {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DEE2EB;
+    cursor: pointer;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+}
+
+.btn__outline_secondary .icon{
+    width: 16px;
+    height: 16px;
+    margin-right:12px 
+}
+
+.btn__outline_secondary .name {
+    color : #0F182E;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* END ====  BUTTON OUTLINE SECONDARY */
+
+/* BUTTON OUTLINE SECONDARY */
+.btn_secondary {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    background-color: #EDF0F7;
+}
+
+.btn_secondary .icon{
+    width: 16px;
+    height: 16px;
+    margin-right:12px 
+}
+
+.btn_secondary .name {
+    color : #0F182E;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* END ====  BUTTON OUTLINE SECONDARY */
+
+/* =====================
+        CSS PAGE
+====================== */ 
+.boxInfo .boxInfo__content {
+    position: relative;
+}
+
+.boxInfo .boxInfo__close {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 12px;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    border-radius: 8px 0 0 8px;
+    -webkit-border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    -ms-border-radius: 8px 0 0 8px;
+    -o-border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    display : none;
+}
+
+.boxInfo .boxInfo__close img {
+    width: 12px;
+    height: 12px;
+}
+
+input[name="info-type"][id="info-type-0"]:checked ~ label[for="info-type-0"],
+input[name="info-type"][id="info-type-1"]:checked ~ label[for="info-type-1"],
+input[name="info-type"][id="info-type-2"]:checked ~ label[for="info-type-2"],
+input[name="info-analysis"][id="info-analysis-0"]:checked ~ label[for="info-analysis-0"],
+input[name="info-analysis"][id="info-analysis-1"]:checked ~ label[for="info-analysis-1"],
+input[name="info-analysis"][id="info-analysis-2"]:checked ~ label[for="info-analysis-2"],
+input[name="info-analysis"][id="info-analysis-3"]:checked ~ label[for="info-analysis-3"],
+input[name="info-analysis"][id="info-analysis-4"]:checked ~ label[for="info-analysis-4"] {
+    background-color: #0F182E;
+}
+
+input[name="info-type"][id="info-type-0"]:checked ~ label[for="info-type-0"] .name,
+input[name="info-type"][id="info-type-1"]:checked ~ label[for="info-type-1"] .name,
+input[name="info-type"][id="info-type-2"]:checked ~ label[for="info-type-2"] .name,
+input[name="info-analysis"][id="info-analysis-0"]:checked ~ label[for="info-analysis-0"] .name,
+input[name="info-analysis"][id="info-analysis-1"]:checked ~ label[for="info-analysis-1"] .name,
+input[name="info-analysis"][id="info-analysis-2"]:checked ~ label[for="info-analysis-2"] .name,
+input[name="info-analysis"][id="info-analysis-3"]:checked ~ label[for="info-analysis-3"] .name,
+input[name="info-analysis"][id="info-analysis-4"]:checked ~ label[for="info-analysis-4"] .name {
+    color: white;
+}
+
+/*
+==========
+*/
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app">
+        <input type="checkbox" id="collapseBoxInfo" checked>
+        <div class="boxInfo">
+            <div class="boxInfo__content w-100 h-100">
+                <label class="boxInfo__close d-flex jc-center at-center" for="collapseBoxInfo">
+                    <img src="./images/icon_close.jpg" alt="close">
+                </label>
+                <div class="boxInfo__content-header">
+                    <div class="d-grid grid-col-2 grid-gap-col-10 px-24 py-12 line-bottom-gray">
+                        <label class="btn__outline_primary">
+                            <div class="btn__outline_primary-content d-flex at-center">
+                                <img src="./images/ic_calculate&compare.png" class="icon" alt="icon">
+                                <span class="name">
+                                    Calculate & Compare
+                                </span>
+                            </div>
+                        </label>
+                        <label class="btn__outline_primary">
+                            <div class="btn__outline_primary-content d-flex at-center">
+                                <img src="./images/ic_button_task_4.png" class="icon" alt="icon">
+                                <span class="name">
+                                    Button task 4
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="d-grid grid-col-3 grid-gap-col-8 grid-gap-row-8 px-24 py-12 line-bottom-gray">
+                        <label class="btn__outline_secondary">
+                            <div class="btn__outline_secondary-content d-flex at-center">
+                                <img src="./images/ic_assembly.png" class="icon" alt="icon">
+                                <span class="name">
+                                    Assembly
+                                </span>
+                            </div>
+                        </label>
+                        <label class="btn__outline_secondary">
+                            <div class="btn__outline_secondary-content d-flex at-center">
+                                <img src="./images/ic_radar.png" class="icon" alt="icon">
+                                <span class="name">
+                                    Radar
+                                </span>
+                            </div>
+                        </label>
+                        <label class="btn__outline_secondary">
+                            <div class="btn__outline_secondary-content d-flex at-center">
+                                <img src="./images/ic_radius.png" class="icon" alt="icon">
+                                <span class="name">
+                                    Radius
+                                </span>
+                            </div>
+                        </label>
+                        <label class="btn__outline_secondary">
+                            <div class="btn__outline_secondary-content d-flex at-center">
+                                <img src="./images/ic_polygon.png" class="icon" alt="icon">
+                                <span class="name">
+                                    Polygon
+                                </span>
+                            </div>
+                        </label>
+                        <label class="btn__outline_secondary">
+                            <div class="btn__outline_secondary-content d-flex at-center">
+                                <img src="./images/ic_assembly.png" class="icon" alt="icon">
+                                <span class="name">
+                                    Rectangle
+                                </span>
+                            </div>
+                        </label>
+                        <label class="btn__outline_secondary">
+                            <div class="btn__outline_secondary-content d-flex at-center">
+                                <img src="./images/ic_building.png" class="icon" alt="icon">
+                                <span class="name">
+                                    Buildings
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="boxInfo__content-body px-24">
+                    <div class="mt-12">
+                        <p class="text-title fw-500 text-secondary">
+                            Type
+                        </p>
+                        <div class="d-grid grid-col-3 grid-gap-col-8 mt-8">
+                            <input type="radio" name="info-type" id="info-type-0" hidden>
+                            <input type="radio" name="info-type" id="info-type-1" hidden>
+                            <input type="radio" name="info-type" id="info-type-2" hidden checked>
+                            <label class="btn_secondary" for="info-type-0">
+                                <div class="btn__outline_secondary-content d-flex at-center">
+                                    <span class="name">
+                                        Condo
+                                    </span>
+                                </div>
+                            </label>
+                            <label class="btn_secondary" for="info-type-1">
+                                <div class="btn__outline_secondary-content d-flex at-center">
+                                    <span class="name">
+                                        Apartment
+                                    </span>
+                                </div>
+                            </label>
+                            <label class="btn_secondary" for="info-type-2">
+                                <div class="btn__outline_secondary-content d-flex at-center">
+                                    <span class="name">
+                                        All
+                                    </span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-40">
+                        <p class="text-title fw-500 text-secondary">
+                            Analysis time
+                        </p>
+                        <div class="d-grid grid-col-3 grid-gap-col-4 grid-gap-row-4 mt-8">
+                            <input type="radio" name="info-analysis" id="info-analysis-0" hidden>
+                            <input type="radio" name="info-analysis" id="info-analysis-1" hidden>
+                            <input type="radio" name="info-analysis" id="info-analysis-2" hidden>
+                            <input type="radio" name="info-analysis" id="info-analysis-3" hidden>
+                            <input type="radio" name="info-analysis" id="info-analysis-4" hidden checked>
+                            
+                            <label class="btn_secondary" for="info-analysis-0">
+                                <div class="btn__outline_secondary-content d-flex at-center">
+                                    <span class="name">
+                                        6 months
+                                    </span>
+                                </div>
+                            </label>
+                            <label class="btn_secondary" for="info-analysis-1">
+                                <div class="btn__outline_secondary-content d-flex at-center">
+                                    <span class="name">
+                                        1 years
+                                    </span>
+                                </div>
+                            </label>
+                            <label class="btn_secondary" for="info-analysis-2">
+                                <div class="btn__outline_secondary-content d-flex at-center">
+                                    <span class="name">
+                                        2 year
+                                    </span>
+                                </div>
+                            </label>
+                            <label class="btn_secondary" for="info-analysis-3">
+                                <div class="btn__outline_secondary-content d-flex at-center">
+                                    <span class="name">
+                                        History
+                                    </span>
+                                </div>
+                            </label>
+                            <label class="btn_secondary" for="info-analysis-4">
+                                <div class="btn__outline_secondary-content d-flex at-center">
+                                    <span class="name">
+                                        Custom
+                                    </span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <select onchange="myFunction()">
+                        <option value="0">Select car:</option>
+                            <option value="1">Aucsacascsadi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Citroen</option>
+                            <option value="4">Ford</option>
+                            <option value="5">Honda</option>
+                            <option value="6">Jaguar</option>
+                            <option value="7">Land Rover</option>
+                            <option value="8">Mercedes</option>
+                    </select>
+
+                    <div class="custom-select" style="width:200px;">
+                        <select onchange="myFunction()">
+                            <option value="0">Select car:</option>
+                            <option value="1">Aucsacascsadi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Citroen</option>
+                            <option value="4">Ford</option>
+                            <option value="5">Honda</option>
+                            <option value="6">Jaguar</option>
+                            <option value="7">Land Rover</option>
+                            <option value="8">Mercedes</option>
+                            <option value="9">Mini</option>
+                            <option value="10">Nissan</option>
+                            <option value="11">Toyota</option>
+                            <option value="12">Volvo</option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                            <option value="0">Select csacascsa:</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Citroen</option>
+                            <option value="4">Ford</option>
+                            <option value="5">Honda</option>
+                            <option value="6">Jaguar</option>
+                            <option value="7">Land Rover</option>
+                            <option value="8">Mercedes</option>
+                            <option value="9">Mini</option>
+                            <option value="10">Nissan</option>
+                            <option value="11">Toyota</option>
+                            <option value="12">Volvo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="boxInfo__content-footer">
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script>
+        function myFunction() {
+            console.log('oke')
+}
+    </script>
+</body>
+</html>
