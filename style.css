@@ -11,76 +11,6 @@
     height: 100vh;
 }
 
-.boxInfo {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    min-width: 460px;
-    width: 30%;
-    background: white;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-}
-
-input[id="collapseBoxInfo"]:checked ~ .boxInfo {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
-    transition: all .4s;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
-    display: flex ;
-}
-
-@media screen and (max-width : 700px) {
-    .boxInfo {
-        top: 230px;
-        min-width: unset;
-        width: 100%;
-        transform: translateY(100%);
-        -webkit-transform: translateY(100%);
-        -moz-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-        -o-transform: translateY(100%);
-    }
-
-    input[id="collapseBoxInfo"]:checked ~ .boxInfo {
-        transform: translateY(0%);
-        -webkit-transform: translateY(0%);
-        -moz-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-        -o-transform: translateY(0%);
-    }
-
-    input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
-        display: none ;
-    }
-}
-
-@media screen and (max-width : 500px) {
-    .boxInfo {
-        top: 53.3vw;
-    }
-}
-
-.boxInfo .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .d-flex {
     display: flex;
 }
@@ -114,24 +44,36 @@ input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
     grid-template-columns: auto auto auto;
 }
 
-.grid-gap-col-10 {
-    grid-column-gap: 10px;
+.grid-gap-col-4 {
+    grid-column-gap: 4px;
 }
 
 .grid-gap-col-8 {
     grid-column-gap: 8px;
 }
 
-.grid-gap-col-4 {
-    grid-column-gap: 4px;
+.grid-gap-col-10 {
+    grid-column-gap: 10px;
+}
+
+.grid-gap-col-12 {
+    grid-column-gap: 12px;
+}
+
+.grid-gap-row-4 {
+    grid-row-gap: 4px;
 }
 
 .grid-gap-row-8 {
     grid-row-gap: 8px;
 }
 
-.grid-gap-row-4 {
-    grid-row-gap: 4px;
+.grid-gap-row-22 {
+    grid-row-gap: 22px;
+}
+
+.pb-14 {
+    padding-bottom: 14px;
 }
 
 .py-12 {
@@ -139,21 +81,42 @@ input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
     padding-bottom: 12px;
 }
 
+.px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 .px-24 {
     padding-left: 24px;
     padding-right: 24px;
+}
+
+.mt-8 {
+    margin-top: 8px;
 }
 
 .mt-12 {
     margin-top: 12px;
 }
 
+.mt-18 {
+    margin-top: 18px;
+}
+
+.mt-22 {
+    margin-top: 22px;
+}
+
 .mt-40 {
     margin-top: 40px;
 }
 
-.mt-8 {
-    margin-top: 8px;
+.ml-8 {
+    margin-left: 8px;
+}
+
+.ml-12 {
+    margin-left: 12px;
 }
 
 .line-bottom-gray {
@@ -170,12 +133,20 @@ input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
     line-height: 24px;
 }
 
+.fw-400 {
+    font-weight: 400;
+}
+
 .fw-500 {
     font-weight: 500;
 }
 
 .text-secondary {
     color: #0F182E;
+}
+
+.text-pink {
+    color: #EC4476;
 }
 
 /* ==============
@@ -243,7 +214,38 @@ CSS COMPONENT
 }
 /* END ====  BUTTON OUTLINE SECONDARY */
 
-/* BUTTON OUTLINE SECONDARY */
+/* BUTTON PRIMARY */
+.btn_primary {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    background: #0089EF;
+    text-decoration: none;
+}
+
+.btn_primary .icon{
+    width: 16px;
+    height: 16px;
+    margin-right:12px 
+}
+
+.btn_primary .name {
+    color : white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* END ====  BUTTON PRIMARY */
+
+/* BUTTON SECONDARY */
 .btn_secondary {
     width: 100%;
     height: 40px;
@@ -257,6 +259,7 @@ CSS COMPONENT
     -ms-border-radius:4px;
     -o-border-radius:4px;
     background-color: #EDF0F7;
+    text-decoration: none;
 }
 
 .btn_secondary .icon{
@@ -271,13 +274,134 @@ CSS COMPONENT
     font-size: 14px;
     line-height: 22px;
 }
-/* END ====  BUTTON OUTLINE SECONDARY */
+/* END ====  BUTTON SECONDARY */
+
+/* INPUT OUTLINE */
+.inputOutline {
+    width: 100%;
+    height : 40px;
+    position: relative;
+    border: 1px solid #DEE2EB;
+    border-radius: 4px;
+}
+
+.inputOutline .inputOutline__name {
+    position: absolute;
+    top: -2px;
+    left: 12px;
+    z-index: 2;
+    background: white;
+    transform: translateY(-50%) ;
+    -webkit-transform: translateY(-50%) ;
+    -moz-transform: translateY(-50%) ;
+    -ms-transform: translateY(-50%) ;
+    -o-transform: translateY(-50%) ;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6C748A;
+    padding-right: 5px;
+}
+
+.inputOutline .inputOutline__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 9px;
+    font-size: 14px;
+    line-height: 22px;
+    color : #0F182E;
+}
+
+.inputOutline .inputOutline__content::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+    color: #9199AF;
+}
 
 /* =====================
         CSS PAGE
 ====================== */ 
+.boxInfo {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    min-width: 460px;
+    background: white;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
+input[id="collapseBoxInfo"]:checked ~ .boxInfo {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
+    display: flex ;
+}
+
+@media screen and (max-width : 700px) {
+    .boxInfo {
+        top: 230px;
+        min-width: unset;
+        width: 100%;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+    }
+
+    input[id="collapseBoxInfo"]:checked ~ .boxInfo {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+
+    input[id="collapseBoxInfo"]:checked ~ .boxInfo .boxInfo__close {
+        display: none ;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .boxInfo {
+        top: 53.3vw;
+    }
+}
+
+.boxInfo .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .boxInfo .boxInfo__content {
+    min-height: 100%;
     position: relative;
+    padding-bottom: 210px;
 }
 
 .boxInfo .boxInfo__close {
@@ -328,66 +452,33 @@ input[name="info-analysis"][id="info-analysis-4"]:checked ~ label[for="info-anal
     color: white;
 }
 
-/*
-==========
-*/
-/*the container must be positioned relative:*/
-.custom-select {
-    position: relative;
-    font-family: Arial;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element:*/
-  }
-  
-  .select-selected {
-    background-color: DodgerBlue;
-  }
-  
-  /*style the arrow inside the select element:*/
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-  }
-  
-  /*point the arrow upwards when the select box is open (active):*/
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
-  
-  /*style the items (options), including the selected item:*/
-  .select-items div,.select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  /*style items (options):*/
-  .select-items {
-    position: absolute;
-    background-color: DodgerBlue;
-    top: 100%;
+.boxInfo__content-footer {
+    position : absolute;
+    bottom: 0px;
     left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  
-  /*hide the items when the select box is closed:*/
-  .select-hide {
-    display: none;
-  }
-  
-  .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+}
+
+.boxInfo__content-footer .boxInfo__content-footer-amountData {
+    background-color: #FFF2F4;
+    border: 1px dashed #EC4476;
+    border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+    border-bottom: none;
+}
+
+.boxInfo__content-footer .boxInfo__content-footer-access.btn_primary {
+    height: 56px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.boxInfo__content-footer .boxInfo__content-footer-access.btn_primary .name.text-title {
+    font-size: 16px;
+    line-height: 24px;
+}

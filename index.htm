@@ -11,7 +11,7 @@
     <div class="app">
         <input type="checkbox" id="collapseBoxInfo" checked>
         <div class="boxInfo">
-            <div class="boxInfo__content w-100 h-100">
+            <div class="boxInfo__content w-100">
                 <label class="boxInfo__close d-flex jc-center at-center" for="collapseBoxInfo">
                     <img src="./images/icon_close.jpg" alt="close">
                 </label>
@@ -165,57 +165,144 @@
                             </label>
                         </div>
                     </div>
-                    
-                    <select onchange="myFunction()">
-                        <option value="0">Select car:</option>
-                            <option value="1">Aucsacascsadi</option>
-                            <option value="2">BMW</option>
-                            <option value="3">Citroen</option>
-                            <option value="4">Ford</option>
-                            <option value="5">Honda</option>
-                            <option value="6">Jaguar</option>
-                            <option value="7">Land Rover</option>
-                            <option value="8">Mercedes</option>
-                    </select>
-
-                    <div class="custom-select" style="width:200px;">
-                        <select onchange="myFunction()">
-                            <option value="0">Select car:</option>
-                            <option value="1">Aucsacascsadi</option>
-                            <option value="2">BMW</option>
-                            <option value="3">Citroen</option>
-                            <option value="4">Ford</option>
-                            <option value="5">Honda</option>
-                            <option value="6">Jaguar</option>
-                            <option value="7">Land Rover</option>
-                            <option value="8">Mercedes</option>
-                            <option value="9">Mini</option>
-                            <option value="10">Nissan</option>
-                            <option value="11">Toyota</option>
-                            <option value="12">Volvo</option>
-                        </select>
+                    <div class="mt-22 d-grid grid-col-2 grid-gap-col-12">
+                        <div class="inputOutline">
+                            <span class="inputOutline__name">Start date</span>
+                            <input class="inputOutline__content"  type="date" />
+                        </div>
+                        <div class="inputOutline">
+                            <span class="inputOutline__name">Start date</span>
+                            <input class="inputOutline__content"  type="date" />
+                        </div>
                     </div>
 
-                    <div class="custom-select" style="width:200px;">
-                        <select>
-                            <option value="0">Select csacascsa:</option>
-                            <option value="1">Audi</option>
-                            <option value="2">BMW</option>
-                            <option value="3">Citroen</option>
-                            <option value="4">Ford</option>
-                            <option value="5">Honda</option>
-                            <option value="6">Jaguar</option>
-                            <option value="7">Land Rover</option>
-                            <option value="8">Mercedes</option>
-                            <option value="9">Mini</option>
-                            <option value="10">Nissan</option>
-                            <option value="11">Toyota</option>
-                            <option value="12">Volvo</option>
-                        </select>
+                    <div class="mt-40">
+                        <p class="text-title fw-500 text-secondary">
+                            Characteristics (% of the total offer)
+                        </p>
+                        <div class="mt-18 d-grid grid-col-2 grid-gap-col-12 grid-gap-row-22">
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Hearting (15%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Light (10%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Yard (4%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Internet (7%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Fournitures (17%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Storage locker (10%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Pets (49%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Renovated (12%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                            <div class="inputOutline">
+                                <span class="inputOutline__name">Laundry in building (5%)</span>
+                                <select class="inputOutline__content">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="boxInfo__content-footer">
-                        
+                <div class="boxInfo__content-footer w-100">
+                    <div class="w-100">
+                        <div class="w-100 px-12">
+                            <div class="boxInfo__content-footer-amountData px-12 pb-14">
+                                <p class="text-title fw-500 text-pink mt-12">
+                                    Characteristics (% of the total offer)
+                                </p>
+                                <div class="d-grid grid-col-3 mt-8 grid-gap-row-8 grid-gap-col-8">
+                                    <div class="w-100 d-flex at-center">
+                                        <span class="text-md fw-400">
+                                            1-1/2:
+                                        </span>
+                                        <span class="ml-8 text-md fw-500">
+                                            585
+                                        </span>
+                                    </div>
+                                    <div class="w-100 d-flex at-center">
+                                        <span class="text-md fw-400">
+                                            2-1/2:
+                                        </span>
+                                        <span class="ml-8 text-md fw-500">
+                                            585
+                                        </span>
+                                    </div>
+                                    <div class="w-100 d-flex at-center">
+                                        <span class="text-md fw-400">
+                                            3-1/2:
+                                        </span>
+                                        <span class="ml-8 text-md fw-500">
+                                            585
+                                        </span>
+                                    </div>
+                                    <div class="w-100 d-flex at-center">
+                                        <span class="text-md fw-400">
+                                            4-1/2:
+                                        </span>
+                                        <span class="ml-8 text-md fw-500">
+                                            585
+                                        </span>
+                                    </div>
+                                    <div class="w-100 d-flex at-center">
+                                        <span class="text-md fw-400">
+                                            5-1/2:
+                                        </span>
+                                        <span class="ml-8 text-md fw-500">
+                                            585
+                                        </span>
+                                    </div>
+                                    <div class="w-100 d-flex at-center">
+                                        <span class="text-md fw-400">
+                                            6-1/2:
+                                        </span>
+                                        <span class="ml-8 text-md fw-500">
+                                            585
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn_primary boxInfo__content-footer-access">
+                            <span class="name text-title">
+                                Access the Data
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
